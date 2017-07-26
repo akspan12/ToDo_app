@@ -1,0 +1,27 @@
+<% include partials/header %>
+
+<div class="container">
+          <%if(currentUser.tasks.length === 0){%>
+               <div class="jumbotron">
+                   <h1>NO TASKS TO DO</h1>
+                   <p>Your ToDo list seems to be empty.Add tasks for list</p>
+                   <a class="btn btn-info btn-lg" href="/todo/new" role="button">Add Tasks</a></p>
+               </div>
+           <% } else { %>
+                   <ul class="list-group">
+                       <%currentUser.tasks.forEach(function(task){%>
+                           <li class="list-group-item">
+                               <%=task.task%>
+                               <form action="/todo/<%=task._id%>?_method=PATCH" method="POST">
+                                   <input type="hidden" value="<%=task._id%>" name="<%=task._id%>" />
+                                   <button class="btn btn-danger btn-xs">DELETE</button>
+                               </form>
+                              
+                            </li>
+                       <% })%>
+                   </ul>
+                   <a class="btn btn-info btn-lg" href="/todo/new" role="button">Add Tasks</a></p>
+           <% } %>
+</div>
+
+<% include partials/footer %>

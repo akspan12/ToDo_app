@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO App</title>
+         <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/stylesheets/home.css">
+        <link href="https://fonts.googleapis.com/css?family=Lemonada:700|Raleway" rel="stylesheet">
+    </head>
+    <body>
+
+
+<div class="sk-folding-cube">
+  <div class="sk-cube1 sk-cube"></div>
+  <div class="sk-cube2 sk-cube"></div>
+  <div class="sk-cube4 sk-cube"></div>
+  <div class="sk-cube3 sk-cube"></div>
+</div>
+
+
+<div class="container">
+    <div class="jumbotron">
+  <h1>TODO APP</h1>
+  <p>Add your daily tasks to the list and delete them when you are done.Also cross them if you want them to be for future.Easy and simple to use.</p>
+  <p>
+      <% if(!currentUser){ %>
+           <a class="btn btn-primary btn-lg" href="/register" role="button">Sign Up</a>
+           <a class="btn btn-info btn-lg" href="/login" role="button">Login</a>
+      <% } else{%>
+           <a class="btn btn-success btn-lg" href="/todo" role="button">View Tasks</a>
+      <% }%>
+     </p>
+</div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ </body>
+</html>

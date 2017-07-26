@@ -1,0 +1,52 @@
+.navbar{
+    background: #000428;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-bottom: 15px;
+}
+
+.link {
+  transition: 0.5s ease;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 1px 10px;
+  margin: 0 10px;
+  
+}
+.link:hover {
+  background-color: #ffffff;
+  
+  color: #EEA200;
+  padding: 5px 10px;
+}
+
+#brand{
+    font-size: 2.0em;
+    color: white; 
+    font-family: Anton;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    font-family: Raleway;
+}
+
+nav {
+  text-align: center;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding-top: 75px;
+}
+.list-group-item{
+    font-family:Roboto ;
+    font-size: large;
+}
+
